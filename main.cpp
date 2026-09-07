@@ -133,72 +133,37 @@ void runTest(const vector<int>& nums, int target, int testNumber)
     printResult(nums, hashResult, target);
 }
 
-
 int main()
 {
-    // --------------------------------------------------
     // Test 1: Required test case from the assignment
-    // --------------------------------------------------
-
-    vector<int> nums1 = {
+    vector<int> nums1 = 
+    {
         15, 4, 18, 8, 19, 22, 24, 59,
         59, 20, 18, 12, 36, 42, 9
     };
-
     int target1 = 24;
-
     // Run the required test.
     runTest(nums1, target1, 1);
-
-
-    // --------------------------------------------------
     // Test 2: Simple example
-    // --------------------------------------------------
-
     vector<int> nums2 = {2, 7, 11, 15};
-
     int target2 = 9;
-
     // Run the second test.
     runTest(nums2, target2, 2);
-
-
-    // --------------------------------------------------
     // Test 3: Test with negative numbers
-    // --------------------------------------------------
-
     vector<int> nums3 = {-3, 4, 7, 2};
-
     int target3 = 1;
-
     // -3 + 4 = 1
     runTest(nums3, target3, 3);
-
-
-    // --------------------------------------------------
     // Test 4: Test with duplicate values
-    // --------------------------------------------------
-
     vector<int> nums4 = {3, 3};
-
     int target4 = 6;
-    // The two 3s are different elements even though
-    // they have the same value.
+    // The two 3s are different elements even though they have the same value.
     runTest(nums4, target4, 4);
-
-
-    // --------------------------------------------------
     // Test 5: Pair appears farther into the vector
-    // --------------------------------------------------
-
     vector<int> nums5 = {10, 5, 20, 1, 30, 8};
-
     int target5 = 28;
-
     // 20 + 8 = 28
     runTest(nums5, target5, 5);
-
-
     // End the program.
     return 0;
 }
